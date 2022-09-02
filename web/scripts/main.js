@@ -21,15 +21,15 @@ function sendInformation(){
             if(request.status === 200){
                 //Mostramos un alert indicando que el proceso fue exitoso
                 swal.fire(
-                    'Succes!',
-                    'Information succed! :D',
+                    'Felicidades!',
+                    'Fuiste registrado en RedX! :D',
                     'success'
                 );
             } else{
                 //Mostramos un alert indicando el error!
                 swal.fire(
                     'Error',
-                    'Oops, we had an error sending your info :(',
+                    'Oops, tuvimos un problema enviando tu informacion :(',
                     'error'
                 );
             }
