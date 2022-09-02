@@ -11,16 +11,15 @@ package classes_package;
 public class client {
     private String codigo;
     private String nombre;
-    private String editorial;
-    private String tipo_pasta;
-    private String publicacion;
+    private String pais;
+    private String servicio;
     
-    public client(String codigo, String nombre, String editorial, String tipo_pasta, String publicacion){
+    //Metodo constructor del objeto, distribuimos la informacion
+    public client(String codigo, String nombre, String pais, String servicio){
         this.codigo=codigo;
         this.nombre=nombre;
-        this.editorial=editorial;
-        this.tipo_pasta=tipo_pasta;
-        this.publicacion=publicacion;
+        this.pais=pais;
+        this.servicio=servicio;
     }
 
     public String getCodigo() {
@@ -39,28 +38,20 @@ public class client {
         this.nombre = nombre;
     }
 
-    public String getEditorial() {
-        return editorial;
+    public String getPais() {
+        return pais;
     }
 
-    public void setEditorial(String editorial) {
-        this.editorial = editorial;
+    public void setPais(String pais) {
+        this.pais = pais;
     }
 
-    public String getTipo_pasta() {
-        return tipo_pasta;
+    public String getServicio() {
+        return servicio;
     }
 
-    public void setTipo_pasta(String tipo_pasta) {
-        this.tipo_pasta = tipo_pasta;
-    }
-
-    public String getPublicacion() {
-        return publicacion;
-    }
-
-    public void setPublicacion(String publicacion) {
-        this.publicacion = publicacion;
+    public void setTipo_pasta(String servicio) {
+        this.servicio = servicio;
     }
     
 }

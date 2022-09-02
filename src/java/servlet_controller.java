@@ -35,10 +35,9 @@ public class servlet_controller extends HttpServlet {
         try (PrintWriter out = response.getWriter()) {
             client_register = new client(
                     request.getParameter("codigo"),
-                    request.getParameter("book_name"),
-                    request.getParameter("pasta"),
-                    request.getParameter("editorial"),
-                    request.getParameter("fecha")
+                    request.getParameter("client_name"),
+                    request.getParameter("client_country"),
+                    request.getParameter("service")
             );
             out.println("<!DOCTYPE html>");
             out.println("<html>");
