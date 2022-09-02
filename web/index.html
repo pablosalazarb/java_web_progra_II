@@ -5,7 +5,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
 -->
 <html>
     <head>
-        <title>ANEA</title>
+        <title>RedX</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
@@ -28,34 +28,15 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
                     <div class="collapse navbar-collapse" id="navbar1">
                         <ul class="navbar-nav">
                             <li class="nav-item active">
-                                <a class="nav-link" href="#">Link</a>
+                                <a class="nav-link" href="#register-form">Registrarme</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
+                                <a class="nav-link" href="#">Mas sobre el servicio</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                          <p>Hola Mundo</p>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
             </nav>
         </div>
         <div id="front-page" class="front-page">
@@ -63,17 +44,28 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
             <h2 class="line anim-typewriter">Internet satelital - Cobertura global</h2>
             <span></span>
         </div>
-        <form id="contact-form" role="form">
-          <div class="form-group has-feedback">
-            <input type="text" class="form-control" id="name" name="name" placeholder="Nombre" required>
-          </div>
-          <div class="form-group has-feedback">
-            <input type="email" class="form-control" id="email" name="email" placeholder="Correo electronico" required>
-          </div>
-
-          <div class="form-group has-feedback">
-            <input type="button" value="Enviar Opcion 1" onclick="sendInformation()" class="submit-button btn btn-default">
-          </div>
-        </form>
+        <div id="register-form" class="register-form">
+            <!-- Formulario de registro de usuarios -->
+            <h1>Registrate como futuro usuario de RedX!</h1>
+            <form id="contact-form" role="form">
+                <div class="form-group has-feedback">
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Nombre" required>
+                </div>
+                <div class="form-group has-feedback">
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Correo electronico" required>
+                </div>
+                <div class="form-group has-feedback">
+                  <select class="custom-select" aria-label="Default select example">
+                    <option selected>Elegi un servicio</option>
+                    <option value="nivel_pais">Cobertura satelital en mi pais</option>
+                    <option value="nivel_region">Cobertura satelital en mi region</option>
+                    <option value="nivel_global">Cobertura en todo el mundo!</option>
+                </select>
+                </div>
+                <div class="form-group has-feedback">
+                  <input type="button" value="Registrarme" onclick="sendInformation()" class="submit-button btn btn-default">
+                </div>
+          </form>
+        </div>
     </body>
 </html>

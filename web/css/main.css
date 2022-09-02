@@ -15,10 +15,21 @@ html, body{
     height: 100%;
 }
 
+.navbar-brand{
+    color: white !important;
+}
+
+.nav-link{
+    color: white !important;
+}
+
+.nav-link:hover{
+    background-color: #23003f;
+}
+
 .nav-background{
     background: linear-gradient(90deg, rgba(90,87,130,1) 0%, rgba(62,62,135,1) 48%, rgba(158,239,255,1) 100%);
     box-shadow: 6px 2px 5px black;
-    color: white;
 }
 
 .front-page{
@@ -34,7 +45,8 @@ html, body{
 
 .front-page h2{
     font-family: 'Space Grotesk', sans-serif;
-    overflow: hidden;transform: translateY(-50%);
+    overflow: hidden;
+    transform: translateY(-50%);
     text-align: center;
     white-space: nowrap;
 }
@@ -71,4 +83,21 @@ html, body{
 .front-page h1{
     font-family: 'Varela Round', sans-serif;
     font-size: 5rem;
+}
+
+.register-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #990099 !important;
+    height: 100%;
+    width: 100%;
+}
+
+.register-form form{
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
