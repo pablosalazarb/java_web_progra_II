@@ -47,15 +47,15 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
         <div id="register-form" class="register-form">
             <!-- Formulario de registro de usuarios -->
             <h1>Registrate como futuro usuario de RedX!</h1>
-            <form id="contact-form" role="form">
+            <form id="contact-form">
                 <div class="form-group has-feedback">
-                  <input type="text" class="form-control" id="name" name="name" placeholder="Nombre" required>
+                  <input type="text" class="form-control" id="client_name" name="client_name" placeholder="Nombre" required>
                 </div>
                 <div class="form-group has-feedback">
-                  <input type="email" class="form-control" id="email" name="email" placeholder="Correo electronico" required>
+                  <input type="text" class="form-control" id="client_country" name="client_country" placeholder="Pais" required>
                 </div>
                 <div class="form-group has-feedback">
-                  <select class="custom-select" aria-label="Default select example">
+                    <select class="custom-select" aria-label="Selector" id="service" name="service">
                     <option selected>Elegi un servicio</option>
                     <option value="nivel_pais">Cobertura satelital en mi pais</option>
                     <option value="nivel_region">Cobertura satelital en mi region</option>
