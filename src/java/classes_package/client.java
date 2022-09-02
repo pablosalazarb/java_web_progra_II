@@ -9,25 +9,15 @@ package classes_package;
  * @author pablouni
  */
 public class client {
-    private String codigo;
     private String nombre;
     private String pais;
     private String servicio;
     
     //Metodo constructor del objeto, distribuimos la informacion
-    public client(String codigo, String nombre, String pais, String servicio){
-        this.codigo=codigo;
+    public client(String nombre, String pais, String servicio){
         this.nombre=nombre;
         this.pais=pais;
         this.servicio=servicio;
-    }
-
-    public String getCodigo() {
-        return codigo;
-    }
-
-    public void setCodigo(String codigo) {
-        this.codigo = codigo;
     }
 
     public String getNombre() {

@@ -34,7 +34,6 @@ public class servlet_controller extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             client_register = new client(
-                    request.getParameter("codigo"),
                     request.getParameter("client_name"),
                     request.getParameter("client_country"),
                     request.getParameter("service")
@@ -45,7 +44,7 @@ public class servlet_controller extends HttpServlet {
             out.println("<title>Servlet servlet_controller</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Nombre del libro " + client_register.getNombre() + "</h1>");
+            out.println("<h1>Nombre del cliente " + client_register.getServicio() + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }
